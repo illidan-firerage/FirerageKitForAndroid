@@ -1,4 +1,4 @@
-package com.illidan.fireragekit;
+package com.illidan.fireragekitdemo;
 
 import android.content.Context;
 import android.os.Bundle;

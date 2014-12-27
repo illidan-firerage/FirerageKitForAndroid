@@ -1,9 +1,9 @@
-package com.illidan.fireragekit;
+package com.illidan.fireragekitdemo;
+
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-
-import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 public class FragmentChangeActivity extends BaseSlidingMenuFragmentActivity {
 	

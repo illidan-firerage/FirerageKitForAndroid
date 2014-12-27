@@ -1,4 +1,4 @@
-package com.illidan.fireragekit;
+package com.illidan.fireragekitdemo;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;

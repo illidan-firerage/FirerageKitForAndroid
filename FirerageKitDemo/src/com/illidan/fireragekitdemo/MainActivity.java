@@ -1,7 +1,7 @@
-package com.illidan.fireragekit;
+package com.illidan.fireragekitdemo;
 
-import android.app.ActionBar.LayoutParams;
 import android.app.Activity;
+import android.app.ActionBar.LayoutParams;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class MainActivity extends Activity {
-	
+
 	private static Context mContext;
 
 	@Override

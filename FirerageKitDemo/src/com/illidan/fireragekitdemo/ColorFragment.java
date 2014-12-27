@@ -1,4 +1,4 @@
-package com.illidan.fireragekit;
+package com.illidan.fireragekitdemo;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
