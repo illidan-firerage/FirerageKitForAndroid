@@ -62,11 +62,11 @@ public class BaseSlidingMenuFragmentActivity extends SlidingFragmentActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getSupportMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
+//
+//	@Override
+//	public boolean onCreateOptionsMenu(Menu menu) {
+//		getSupportMenuInflater().inflate(R.menu.main, menu);
+//		return false;
+//	}
 
 }
