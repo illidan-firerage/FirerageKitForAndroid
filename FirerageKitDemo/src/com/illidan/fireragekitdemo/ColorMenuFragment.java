@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 public class ColorMenuFragment extends ListFragment {
 
+	private SampleAdapter mAdap;
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		return inflater.inflate(R.layout.list, null);
@@ -27,11 +29,11 @@ public class ColorMenuFragment extends ListFragment {
 //				android.R.layout.simple_list_item_1, android.R.id.text1, colors);
 //		setListAdapter(colorAdapter);
 		
-		SampleAdapter adapter = new SampleAdapter(getActivity());
+		mAdap = new SampleAdapter(getActivity());
 		for (int i = 0; i < 5; i++) {
-			adapter.add(new SampleItem("Sample", android.R.drawable.ic_menu_search));
+			mAdap.add(new SampleItem("Sample", android.R.drawable.ic_menu_search));
 		}
-		setListAdapter(adapter);
+		setListAdapter(mAdap);
 	}
 
 	@Override
@@ -54,8 +56,8 @@ public class ColorMenuFragment extends ListFragment {
 			newContent = new ColorFragment(android.R.color.black);
 			break;
 		}
-		
-		
+		mAdap.setSelectItem(position);
+		mAdap.notifyDataSetChanged();
 		
 		if (newContent != null)
 			switchFragment(newContent);
