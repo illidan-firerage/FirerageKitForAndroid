@@ -7,15 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-public class ColorFragment extends Fragment {
+public class MatrixFragment3 extends Fragment {
 	
 	private int mColorRes = -1;
 	
-	public ColorFragment() { 
-		this(R.color.white);
+	public MatrixFragment3() { 
+		this(R.color.blue);
 	}
 	
-	public ColorFragment(int colorRes) {
+	public MatrixFragment3(int colorRes) {
 		mColorRes = colorRes;
 		setRetainInstance(true);
 	}
@@ -35,6 +35,14 @@ public class ColorFragment extends Fragment {
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 		outState.putInt("mColorRes", mColorRes);
+	}
+	
+	public void setBackgroundColor(int colorRes) {
+		mColorRes = colorRes;
+		int color = getResources().getColor(mColorRes);
+		// construct the RelativeLayout
+		RelativeLayout v = new RelativeLayout(getActivity());
+		v.setBackgroundColor(color);
 	}
 	
 }
