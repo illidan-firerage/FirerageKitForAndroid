@@ -7,11 +7,11 @@ import android.util.Log;
 
 public class BaseException implements UncaughtExceptionHandler {
 	
-	//��ȡapplication ���� 
+	//上下文
     private Context mContext; 
     
     private Thread.UncaughtExceptionHandler defaultExceptionHandler; 
-    //��������CustomException; 
+    //CustomException; 
     private static BaseException baseException; 
     
     private BaseException(){    
@@ -38,9 +38,17 @@ public class BaseException implements UncaughtExceptionHandler {
     } 
     
 	public void init(Context context) {
-		mContext = context;
+		setmContext(context);
 		defaultExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();
 		Thread.setDefaultUncaughtExceptionHandler(this);
+	}
+
+	public Context getmContext() {
+		return mContext;
+	}
+
+	public void setmContext(Context mContext) {
+		this.mContext = mContext;
 	}
 	
 }

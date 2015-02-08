@@ -14,6 +14,8 @@ public class BaseFragmentActivity extends SherlockFragmentActivity {
 	private TextView mTitleTextView;
 	private ImageButton mLeftImageButton;
 	
+	public NavigationController mNavigationController;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -50,6 +52,6 @@ public class BaseFragmentActivity extends SherlockFragmentActivity {
 			mLeftImageButton.setOnClickListener(onClickListener);
 		}
 		
-	}
+	}	
 	
 }

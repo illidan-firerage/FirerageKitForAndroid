@@ -1,18 +1,13 @@
 package com.illidan.fireragekit.base;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.support.v4.app.ListFragment;
 
-public class BaseFragment extends Fragment {
+public class BaseListFragment extends ListFragment {
 	
-	public BaseFragment() {
+	public BaseListFragment() {
 		// Required empty public constructor
 	}
-	
-	@Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-    }
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
