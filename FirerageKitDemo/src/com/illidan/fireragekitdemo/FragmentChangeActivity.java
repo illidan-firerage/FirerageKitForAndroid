@@ -4,6 +4,7 @@ import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 
 public class FragmentChangeActivity extends BaseSlidingMenuFragmentActivity {
 	
@@ -23,11 +24,12 @@ public class FragmentChangeActivity extends BaseSlidingMenuFragmentActivity {
 			mContent = new ColorFragment(R.color.red);	
 		
 		// set the Above View
-		setContentView(R.layout.content_frame);
-		getSupportFragmentManager()
-		.beginTransaction()
-		.replace(R.id.content_frame, mContent)
-		.commit();
+		setContentView(R.layout.fragment_matrix);
+		
+//		getSupportFragmentManager()
+//		.beginTransaction()
+//		.replace(R.id.content_frame, mContent)
+//		.commit();
 		
 		// set the Behind View
 		setBehindContentView(R.layout.menu_frame);
